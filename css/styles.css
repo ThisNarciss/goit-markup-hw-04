@@ -470,13 +470,11 @@ svg {
 
 .footer-social-web {
   display: flex;
+  column-gap: 10px;
 }
 
 .social-web-content {
   margin-left: 70px;
-}
-.footer-social-web-item + .footer-social-web-item {
-  margin-left: 10px;
 }
 
 .footer-social-web-link {
