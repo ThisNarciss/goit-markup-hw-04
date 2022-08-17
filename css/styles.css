@@ -159,10 +159,10 @@ svg {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: var(--accent);
-  fill: var(--accent);
 }
 
 .header-contacts-item + .header-contacts-item {
@@ -173,11 +173,14 @@ svg {
   align-items: center;
 }
 
-.icon-smartphone,
-.icon-envelope {
-  display: inline-block;
+.icon-contacts {
   fill: var(--secondary-text-color);
   margin-right: 10px;
+}
+
+.header-contacts-link:hover .icon-contacts,
+.header-contacts-link:focus .icon-contacts {
+  fill: #188ce8;
 }
 
 /*Main*/
@@ -188,6 +191,7 @@ svg {
   background-color: var(--hero-bgc);
   padding-top: 200px;
   padding-bottom: 200px;
+
   background-image: linear-gradient(
       to top,
       rgba(47, 48, 58, 0.4),
@@ -247,10 +251,9 @@ svg {
 .benefits-list {
   display: flex;
   list-style: none;
+  column-gap: 30px;
 }
-.benefits-list-item + .benefits-list-item {
-  margin-left: 30px;
-}
+
 .benefits-icon-box {
   background-color: var(--secondary-bgc);
   border-radius: 4px;
@@ -350,15 +353,15 @@ svg {
 
 .icon-team {
   fill: var(--icon-kink-color);
-  padding: 12px;
 }
-.icon-team:hover,
-.icon-team:focus {
+.icon-link:hover .icon-team,
+.icon-link:focus .icon-team {
   fill: var(--fon-main-color);
 }
 
 .icon-link {
   display: block;
+  padding: 12px;
 }
 .icon-link:hover,
 .icon-link:focus {
@@ -388,23 +391,21 @@ svg {
   display: block;
   border: 1px solid var(--icon-kink-color);
   border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .icon-clients {
   fill: var(--icon-kink-color);
-
-  padding: 16px 32px;
 }
 
-.icon-clients:hover,
-.icon-clients:focus {
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
   fill: var(--accent);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent);
-  border-radius: 4px;
 }
 
 /*Footer*/
